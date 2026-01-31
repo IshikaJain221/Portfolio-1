@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 40px;
+  font-size: 14px;
+}
+
+/* HERO */
+.hero {
+  padding: 120px 40px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.1;
+}
+
+.hero p {
+  margin-top: 24px;
+  color: #aaa;
+  max-width: 600px;
+}
+
+/* PROJECTS */
+.projects-wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.projects {
+  display: flex;
+  gap: 120px;
+  padding: 80px 40px;
+  height: 100%;
+  align-items: center;
+}
+
+.project {
+  min-width: 520px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #333;
+  margin-bottom: 16px;
+}
+
+.project h2 {
+  font-size: 40px;
+  overflow: hidden;
+}
+
+.project p {
+  margin-top: 8px;
+  color: #888;
+}
+
+/* HOVER MOVE TEXT */
+.hover-text span {
+  display: inline-block;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+              color 0.3s ease;
+}
+
+.hover-text:hover span {
+  transform: translateX(-14px);
+  color: #9eff00;
+}
+
+/* RESUME */
+.resume {
+  padding: 80px 40px;
+}
+
+.resume h2 {
+  font-size: 28px;
+  margin: 24px 0 8px;
+}
+
+.resume p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* CUSTOM CURSOR */
+.cursor {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #9eff00;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease,
+              width 0.15s ease,
+              height 0.15s ease,
+              background 0.15s ease;
+  z-index: 9999;
+}
+
+.cursor.link-hover {
+  width: 36px;
+  height: 36px;
+  background: rgba(158, 255, 0, 0.2);
+}
+a {
+  cursor: none;
+}
